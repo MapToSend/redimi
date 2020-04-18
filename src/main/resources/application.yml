@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active: dev
+
+server:
+  port: 9999
+
+mybatis:
+  mapper-locations: classpath:mapping/*Mapper.xml
+  type-aliases-package: com.example.model
+
+#showSql
+logging:
+  level:
+    com.xcc.demo.redimi.mapper: debug
+
+proper:
+  aaa: dsaa
+  bbb: 1111
