@@ -68,9 +68,9 @@ public class HelloController {
         user.setPassWord("123456");
         user.setUserName("lisi");
         redisTemplate.opsForValue().set("saveUser", user, 1, TimeUnit.MINUTES);
-
         stringRedisTemplate.opsForValue().set("aaa", "bbb", 1, TimeUnit.MINUTES);
 
+//        redisTemplate.expire() result
         return "redis存储数据";
     }
 

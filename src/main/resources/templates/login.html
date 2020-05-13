@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="../static/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="/jq/jquery-3.4.1.min.js" ></script>
 </head>
 <body>
 
+<button  id="aaa"> dsadsa</button>
 <form action="http://localhost:9999/hello/reg" method="post">
 
     username:<input type="text" name="userName"/><br>
@@ -18,7 +19,22 @@
 
 </form>
 
+
+
 <script>
+    
+    $(function () {
+        alert("ssssssssssss")
+        $("#aaa").html("AAAAAAAAAAAAAAAAAA")
+        
+    });
+
+
+
+   $("#aaa").click(function () {
+       alert("aaaaaaaaaaaa");
+
+   })
 
 </script>
 

@@ -17,6 +17,8 @@ class RedimiApplicationTests {
     @Test
     void contextLoads() {
 
+
+
         BigDecimal bigDecimal1 = new BigDecimal(1.2);
         BigDecimal bigDecimal2 = new BigDecimal(6);
         System.out.println(bigDecimal1.add(bigDecimal2));
@@ -24,9 +26,8 @@ class RedimiApplicationTests {
 
     }
 
-
     @Test
-    void aa(){
+    void aa() {
 
         User user = new User();
         user.setUserName("qqq");
@@ -35,9 +36,16 @@ class RedimiApplicationTests {
         user.setPassWord("11111");
         Integer integer = userMapper.addUser(user);
 
-        System.out.println("插入数据后返回的:"+integer);
+        System.out.println("插入数据后返回的:" + integer);
 
     }
 
+    @Test
+    void bb() {
+
+
+
+
+    }
 
 }
